@@ -81,6 +81,11 @@ li:hover{
     border-radius: 100px;
 }
 
+.github{
+    height: 7%;
+    width: 7%;
+}
+
 @media (max-width: 600px) {
     .barra_nav{
         display: block;
