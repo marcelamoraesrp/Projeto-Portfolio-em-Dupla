@@ -27,6 +27,9 @@ body{
     background-color: var(--background);
 }
 
+.projeto {
+    font-size: clamp(1rem, 3vw, 2.4rem);
+}
 
 header{
     display: flex;
@@ -34,6 +37,8 @@ header{
     background: linear-gradient(90deg,var(--preto), var(--cor_principal_escura), var(--cor_principal));
     align-items: center;
     padding: 0px 0px 0px 20px;
+    height: clamp(7em, 10vw, 8em);
+    flex-wrap: wrap;
 }
 .barra-nav{
     display: flex;
@@ -47,11 +52,10 @@ ul {
 }
 
 li {
-    padding: 20px;
+    padding: 0.5vw;
+    font-size: clamp(1.3rem, 1.5vw, 1.3rem);
     /* background-color: antiquewhite; */
 }
-
-
 
 
 li:hover{
