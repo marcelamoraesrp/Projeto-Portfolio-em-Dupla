@@ -30,7 +30,7 @@ body{
 header{
     height: 10em;
     max-width: 100%;
-    background-image: linear-gradient(90deg,var(--preto), var(--cor_principal));
+    background-image: linear-gradient(90deg,var(--preto), var(--cor_principal_escura), var(--cor_principal));
     display: flex;
 }
 .barra_nav{
@@ -83,22 +83,30 @@ li:hover{
 }
 
 .github{
-    height: 7%; 
-    width: 7%;
+    height: auto; 
+    width: 2em;
 }
 
 .linkedin{
-    height: 18%; 
-    width: 18%;
+    height: auto; 
+    width: 5em;
 }
 footer{
+    position: absolute;
+    bottom: 0%;
+    height: 7em;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--cor_principal_escura);
 }
 .contatos{
     font-size: 1.2em;
-
+    margin: 3%;
+}
+.img_contatos{
+    margin-inline-start: 2em;
 }
 
 @media (max-width: 600px) {
