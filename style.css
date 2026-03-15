@@ -32,6 +32,89 @@ header{
     max-width: 100%;
     background-image: linear-gradient(90deg,var(--preto), var(--cor_principal_escura), var(--cor_principal));
     display: flex;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 .barra_nav{
     height: 10em;
@@ -43,21 +126,17 @@ ul {
     align-items: center;
     padding: 3%;
     display: flex;
-    justify-content: space-between;
 }
 
 #titulo {
     align-items: center;
     padding: 3%;
     display: flex;
-    justify-content: space-between;
     font-size: 2.3em;
 }
 
 li{
     text-align: center;
-    width: max-content;
-    margin-left: 7%;
     font-size: 1.2em;
 }
 li:hover{
