@@ -1,5 +1,6 @@
 :root{
     --cor_principal: #8525bd;
+    --cor_principal_escura: #1f0c29;
     --preto: #000000;
     --branco: #ffffff;
     --background: #1d2021;
@@ -84,6 +85,20 @@ li:hover{
 .github{
     height: 7%; 
     width: 7%;
+}
+
+.linkedin{
+    height: 18%; 
+    width: 18%;
+}
+footer{
+    width: 100%;
+    display: flex;
+    background-color: var(--cor_principal_escura);
+}
+.contatos{
+    font-size: 1.2em;
+
 }
 
 @media (max-width: 600px) {
