@@ -4,7 +4,7 @@
     --preto: #000000;
     --branco: #ffffff;
     --background: #1d2021;
-
+    --main: #151616;
 }
 
 *{
@@ -65,9 +65,12 @@ li:hover{
 #colab{
     display: flex;
     margin-block-start: -1.5em;
+    margin-inline-start: 2.25em;                                                                 /* Margin da dupla     */
+    gap: 0.5em;
+    
 }
 .dupla{
-    margin-inline-start: 1.25em;
+    display: flex;
     text-align: center;
     align-items: center;
 }
@@ -113,11 +116,24 @@ footer {
 }
 
 main {
-    background: #8525bd;
+    /* background: #8525bd; */
     display: grid;
-    max-width: 70vw;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    text-align: center;
-    grid
+    width: 100%;
+    max-width: 75vw;
+    grid-template-columns: auto auto;
+    margin-inline-start: 7vw;
+    /* text-align: center; */
+    align-items: center;
+    grid-gap: 4.5em;
+    background-color: var(--main);
+    padding: 5em;
+}
+
+main > p:nth-child(1) {
+    font-size: 1.5em;
+    margin-inline-start: 1em;
+}
+
+main > p:nth-child(2) {
+    max-width: 90%;
 }
