@@ -74,7 +74,7 @@ li:hover{
     text-align: center;
     align-items: center;
 }
-img{
+.img{
     width: 200px;
     height: auto;
     border: 3px solid var(--cor_principal);
