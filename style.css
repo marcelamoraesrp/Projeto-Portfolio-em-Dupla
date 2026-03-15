@@ -65,16 +65,16 @@ li:hover{
     background-color: var(--cor_principal);
 }
 
-#dupla{
+#colab{
     display: flex;
     margin-block-start: -1.5em;
 }
-.imagens{
+.dupla{
     margin-inline-start: 1.25em;
     text-align: center;
     align-items: center;
 }
-.img{
+.imagem{
     width: 200px;
     height: auto;
     border: 3px solid var(--cor_principal);
@@ -82,7 +82,7 @@ li:hover{
 }
 
 .github{
-    height: 7%;
+    height: 7%; 
     width: 7%;
 }
 
