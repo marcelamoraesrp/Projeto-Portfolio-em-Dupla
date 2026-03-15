@@ -4,7 +4,7 @@ Este projeto irá percorrer todo o semestre. Consiste em criar um site no qual d
 <table>
   <tr>
     <td align="center">
-      <a href="#" title="https://github.com/JoaoLuiz07">
+      <a href="https://github.com/JoaoLuiz07">
         <img src="https://avatars.githubusercontent.com/u/235787009?v=4" width="100px;" alt="Foto do João Luiz no GitHub"/><br>
         <sub>
           <p>João Luiz</p>
@@ -12,7 +12,7 @@ Este projeto irá percorrer todo o semestre. Consiste em criar um site no qual d
       </a>
     </td>
     <td align="center">
-      <a href="#" title="https://github.com/marcelamoraesrp">
+      <a href="https://github.com/marcelamoraesrp">
         <img src="https://avatars.githubusercontent.com/u/230621478?v=4" width="100px;" alt="Foto do Marcela Moraes no GitHub"/><br>
         <sub>
           <p>Marcela Moraes</p>
