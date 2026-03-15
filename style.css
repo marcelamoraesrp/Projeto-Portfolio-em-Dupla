@@ -28,7 +28,7 @@ body{
 }
 
 .projeto {
-    font-size: clamp(1rem, 3vw, 2.4rem);
+    font-size: clamp(2rem, 3vw, 2.25rem);
 }
 
 header{
@@ -37,8 +37,7 @@ header{
     background: linear-gradient(90deg,var(--preto), var(--cor_principal_escura), var(--cor_principal));
     align-items: center;
     padding: 0px 0px 0px 20px;
-    height: clamp(7em, 10vw, 8em);
-    flex-wrap: wrap;
+    height: clamp(5em, 6vw, 8em);
 }
 .barra-nav{
     display: flex;
@@ -53,8 +52,7 @@ ul {
 
 li {
     padding: 0.5vw;
-    font-size: clamp(1.3rem, 1.5vw, 1.3rem);
-    /* background-color: antiquewhite; */
+    font-size: clamp(1.5rem, 1.3vw, 1.9rem);
 }
 
 
@@ -74,10 +72,13 @@ li:hover{
     align-items: center;
 }
 .imagem{
-    width: 200px;
-    height: auto;
+    width: clamp(200px, 10vw, 6vw);
     border: 3px solid var(--cor_principal);
     border-radius: 100px;
+}
+
+.nomes {
+    font-size: clamp(1.5rem, 1.3vw, 1.9rem);
 }
 
 .github{
@@ -100,22 +101,23 @@ footer{
     background-color: var(--cor_principal_escura);
 }
 .contatos{
-    font-size: 1.2em;
+    font-size: clamp(1.1rem, 1.1vw, 1.9rem);
     margin: 3%;
 }
 .img_contatos{
-    margin-inline-start: 2em;
+    margin-inline-start: 1em;
 }
 
-@media (max-width: 600px) {
-    .barra_nav{
-        display: block;
-    }
-    #titulo {
-        align-items: center;
-        text-align: center;
-    }
-    header{
-        height: 12em;
-    }
+footer {
+    height: clamp(5em, 4vw, 8em);
+}
+
+main {
+    background: #8525bd;
+    display: grid;
+    max-width: 70vw;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    text-align: center;
+    grid
 }
