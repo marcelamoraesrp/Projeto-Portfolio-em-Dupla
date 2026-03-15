@@ -1,13 +1,13 @@
-:root{
+:root {
     --cor_principal: #8525bd;
     --cor_principal_escura: #1f0c29;
     --preto: #000000;
     --branco: #ffffff;
     --background: #1d2021;
-    --main: #151616;
+    --cor_secundaria: #151616;
 }
 
-*{
+* {
     text-decoration: none;
     list-style: none;
     font-family: Inter, sans-serif;
@@ -16,14 +16,15 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-.inter{
+
+.inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
 }
 
-body{
+body {
     background-color: var(--background);
 }
 
@@ -31,17 +32,19 @@ body{
     font-size: clamp(2rem, 3vw, 2.25rem);
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(90deg,var(--preto), var(--cor_principal_escura), var(--cor_principal));
+    background: linear-gradient(90deg, var(--preto), var(--cor_principal_escura), var(--cor_principal));
     align-items: center;
     padding: 0px 0px 0px 20px;
     height: clamp(5em, 6vw, 8em);
 }
-.barra-nav{
+
+.barra-nav {
     display: flex;
 }
+
 ul {
     margin: 0;
     padding: 0;
@@ -56,25 +59,28 @@ li {
 }
 
 
-li:hover{
+li:hover {
     border-radius: 100px;
     border: 1px solid var(--cor_principal);
     background-color: var(--cor_principal);
 }
 
-#colab{
+#colab {
     display: flex;
     margin-block-start: -1.5em;
-    margin-inline-start: 2.25em;                                                                 /* Margin da dupla     */
+    margin-inline-start: 2.25em;
+    /* Margin da dupla     */
     gap: 0.5em;
-    
+
 }
-.dupla{
+
+.dupla {
     display: flex;
     text-align: center;
     align-items: center;
 }
-.imagem{
+
+.imagem {
     width: clamp(200px, 10vw, 6vw);
     border: 3px solid var(--cor_principal);
     border-radius: 100px;
@@ -84,16 +90,17 @@ li:hover{
     font-size: clamp(1.5rem, 1.3vw, 1.9rem);
 }
 
-.github{
-    height: auto; 
+.github {
+    height: auto;
     width: 2em;
 }
 
-.linkedin{
-    height: auto; 
+.linkedin {
+    height: auto;
     width: 5em;
 }
-footer{
+
+footer {
     position: absolute;
     bottom: 0%;
     height: 7em;
@@ -103,11 +110,13 @@ footer{
     justify-content: space-between;
     background-color: var(--cor_principal_escura);
 }
-.contatos{
+
+.contatos {
     font-size: clamp(1.1rem, 1.1vw, 1.9rem);
     margin: 3%;
 }
-.img_contatos{
+
+.img_contatos {
     margin-inline-start: 1em;
 }
 
@@ -125,15 +134,25 @@ main {
     /* text-align: center; */
     align-items: center;
     grid-gap: 4.5em;
-    background-color: var(--main);
-    padding: 5em;
+    /* background-color: var(--cor_secundaria); */
+    padding: 1em;
 }
 
-main > p:nth-child(1) {
+main>p:nth-child(1) {
     font-size: 1.5em;
     margin-inline-start: 1em;
 }
 
-main > p:nth-child(2) {
+main>p:nth-child(2) {
     max-width: 90%;
+    font-size: clamp(1rem, 1vw, 1.5vw);
 }
+
+hr {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: var(--cor_secundaria);
+    color: var(--cor_secundaria);
+    border-color: var(--cor_secundaria);
+}
+
