@@ -125,16 +125,13 @@ footer {
 }
 
 main {
-    /* background: #8525bd; */
     display: grid;
     width: 100%;
     max-width: 75vw;
     grid-template-columns: auto auto;
     margin-inline-start: 7vw;
-    /* text-align: center; */
     align-items: center;
     grid-gap: 4.5em;
-    /* background-color: var(--cor_secundaria); */
     padding: 1em;
 }
 
