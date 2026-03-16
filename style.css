@@ -154,7 +154,7 @@ hr {
 }
 
 
-@media (max-width: 772px) {
+@media (max-width: 762px) {
     header>nav {
         margin-top: -40px;
     }
