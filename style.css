@@ -40,9 +40,14 @@ header {
     justify-content: space-between;
     background: linear-gradient(90deg, var(--preto), var(--cor_principal_escura), var(--cor_principal));
     align-items: center;
+<<<<<<< HEAD
     padding-left: 25px;
     height: 8em;
     flex-wrap: wrap;
+=======
+    padding: 0px 0px 0px 20px;
+    height: clamp(7em, 6vw, 8em);
+>>>>>>> c1349101f2d0d446b4106face6d235e31f3f08a5
 }
 
 .barra-nav {
@@ -104,6 +109,7 @@ li:hover {
 .linkedin {
     height: auto;
     width: 5em;
+    width: 2em;
 }
 
 footer {
