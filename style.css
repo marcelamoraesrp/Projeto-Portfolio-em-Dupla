@@ -96,6 +96,11 @@ hr {
     font-size: clamp(14px, 1vw, 1.5vw);
 }
 
+main {
+    display: grid;
+}
+
+
 .tec {
     display: grid;
     grid-template-columns: 1fr 1fr;
