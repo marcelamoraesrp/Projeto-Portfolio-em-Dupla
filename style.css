@@ -123,9 +123,6 @@ main {
     grid-column: 1/3;
 }
 
-#filtro{
-    filter: invert(100%);
-}
 .tecimg {
     filter: grayscale(100%);
     width: 25px;
