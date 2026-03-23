@@ -4,7 +4,6 @@
     --preto: #000000;
     --branco: #ffffff;
     --background: #1d2021;
-    --cor_secundaria: #151616;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -141,7 +140,6 @@ hr {
     justify-items: center;
     justify-self: center;
     text-align: center;
-    gap: 10px;
 
     width: 50vw;
     min-height: 180px;
@@ -162,6 +160,26 @@ hr {
 .tecimg {
     width: 25px;
     filter: grayscale(100%) contrast(200%);
+}
+
+/* PROJETOS */
+
+.projbox {
+    margin-left: clamp(5rem, 10vw, 12.4rem);
+    width: 100vw;
+}
+
+.projtitulo {
+    font-size: clamp(1.1rem, 2.3vw, 1.4rem);
+    ;
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50vw;
+    background-color: #8525bd;
+    /* margin: 0 auto; */
 }
 
 /* FOOTER */
@@ -232,6 +250,11 @@ footer {
     #colab {
         margin-block-start: -0.6em;
     }
+
+    .projtitulo {
+        margin-left: 2.34em;
+    }
+
 }
 
 @media (max-width: 425px) {
