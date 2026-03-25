@@ -34,6 +34,7 @@ main {
     display: grid;
 }
 
+
 /* HEADER */
 
 header {
@@ -123,11 +124,11 @@ hr {
     padding-bottom: 20px;
 }
 
-.sobrenos > p:nth-child(1) {
+.sobrenos>p:nth-child(1) {
     font-size: clamp(1.1rem, 2.3vw, 1.4rem);
 }
 
-.sobrenos > p:nth-child(2) {
+.sobrenos>p:nth-child(2) {
     max-width: 90%;
     font-size: clamp(14px, 1vw, 1.2rem);
 }
@@ -164,32 +165,37 @@ hr {
 
 /* PROJETOS */
 
-    #botao {
-        width: 100px;
-        background-color: #8525bd;
-        color: rgb(206, 4, 4);
-        margin: 0 auto;
-    }
+#botao {
+    width: 100px;
+    background-color: #000000;
+    margin: 0 auto;
+    cursor: pointer;
+}
 
-    .box {
-        display: flex;
-        margin: 0 auto;
+.projtitulo {
+    font-size: clamp(1.1rem, 2.3vw, 1.4rem);
+    margin-left: clamp(5rem, 10vw, 12.4rem);
+}
 
-    }
+.box {
+    display: flex;
+    margin: 0 auto;
 
-    .react {
-        display: flex;
-        width: 10%;
-    }
+}
 
-    .expo {
-        display: flex;
-        width: 10%;
-    }
+.joao {
+    display: flex;
+    width: 10%;
+}
 
-    .Inativo {
-        display: none;
-    }
+.marcela {
+    display: flex;
+    width: 10%;
+}
+
+.Inativo {
+    display: none;
+}
 
 /* FOOTER */
 
@@ -224,7 +230,7 @@ footer {
 /* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
-    header > nav {
+    header>nav {
         margin-top: -40px;
     }
 }
@@ -239,7 +245,7 @@ footer {
         grid-gap: 1em;
     }
 
-    .sobrenos > p:nth-child(1) {
+    .sobrenos>p:nth-child(1) {
         font-size: 1.25em;
     }
 
@@ -288,7 +294,7 @@ footer {
         margin-left: 5px;
     }
 
-    .contatos > p {
+    .contatos>p {
         font-size: medium;
     }
 
