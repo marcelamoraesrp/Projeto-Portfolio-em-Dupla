@@ -1,6 +1,6 @@
 # Projeto Portfolio em Dupla
 Este projeto irá percorrer todo o semestre. Consiste em criar um site no qual devem ser postadas as atividades desenvolvidas em aula. Estas atividades devem ter o layout melhorado (com objetivo de layout profissional aplicando técnicas de design) e adição de novas funcionalidades (interatividade com o usuário). Deverão ser formadas duplas.
-#
+
 ## Dupla do projeto
 <table width="100%" aling="center">
   <tr>
@@ -23,10 +23,13 @@ Este projeto irá percorrer todo o semestre. Consiste em criar um site no qual d
   </tr>
 </table>
 
-#
 ## Videos de base para estudo
-<a href="https://youtu.be/DcN49TD7it0?si=Y2ZcLtPnjUGNzub_"><p>JavaScript WEB e a DOM na Prática | Curso de JavaScript Completo Gratuito</p></a>
+<a href="https://youtu.be/DcN49TD7it0?si=Y2ZcLtPnjUGNzub_">
+<p>JavaScript WEB e a DOM na Prática | Curso de JavaScript Completo Gratuito</p>
 <sub>DevClub | Programação</sub>
+</a>
 
-<a href="https://youtu.be/DnODupiIAiE?si=3IOdtX_-3PYxOWDL"><p>Menu Mobile - HTML, CSS e JavaScript</p></a>
+<a href="https://youtu.be/DnODupiIAiE?si=3IOdtX_-3PYxOWDL">
+<p>Menu Mobile - HTML, CSS e JavaScript</p>
 <sub>Origamid</sub>
+</a>
