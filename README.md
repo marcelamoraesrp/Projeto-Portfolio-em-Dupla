@@ -5,7 +5,7 @@ Este projeto irá percorrer todo o semestre. Consiste em criar um site no qual d
 <table width="100%" aling="center">
   <tr>
     <td align="center">
-      <a href="https://github.com/JoaoLuiz07">
+      <a target="_blank" href="https://github.com/JoaoLuiz07">
         <img src="https://avatars.githubusercontent.com/u/235787009?v=4" width="100px;" alt="Foto do João Luiz no GitHub"/><br>
         <sub>
           <p>João Luiz</p>
@@ -13,7 +13,7 @@ Este projeto irá percorrer todo o semestre. Consiste em criar um site no qual d
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/marcelamoraesrp">
+      <a target="_blank" href="https://github.com/marcelamoraesrp">
         <img src="https://avatars.githubusercontent.com/u/230621478?v=4" width="100px;" alt="Foto do Marcela Moraes no GitHub"/><br>
         <sub>
           <p>Marcela Moraes</p>
@@ -24,12 +24,12 @@ Este projeto irá percorrer todo o semestre. Consiste em criar um site no qual d
 </table>
 
 ## Videos de base para estudo
-<a href="https://youtu.be/DcN49TD7it0?si=Y2ZcLtPnjUGNzub_">
+<a target="_blank" href="https://youtu.be/DcN49TD7it0?si=Y2ZcLtPnjUGNzub_">
 <p>JavaScript WEB e a DOM na Prática | Curso de JavaScript Completo Gratuito</p>
 <sub>DevClub | Programação</sub>
 </a>
 <br><br>
-<a href="https://youtu.be/DnODupiIAiE?si=3IOdtX_-3PYxOWDL">
+<a target="_blank" href="https://youtu.be/DnODupiIAiE?si=3IOdtX_-3PYxOWDL">
 <p>Menu Mobile - HTML, CSS e JavaScript</p>
 <sub>Origamid</sub>
 </a>
