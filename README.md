@@ -24,4 +24,9 @@ Este projeto irá percorrer todo o semestre. Consiste em criar um site no qual d
 </table>
 
 #
+## Videos de base para estudo
+<a href="https://youtu.be/DcN49TD7it0?si=Y2ZcLtPnjUGNzub_"><p>JavaScript WEB e a DOM na Prática | Curso de JavaScript Completo Gratuito</p></a>
+<sub>DevClub | Programação</sub>
 
+<a href="https://youtu.be/DnODupiIAiE?si=3IOdtX_-3PYxOWDL"><p>Menu Mobile - HTML, CSS e JavaScript</p></a>
+<sub>Origamid</sub>
