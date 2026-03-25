@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    
-    <head>
-        <meta charset="UTF-8">
-        <title>Projeto Portfolio em Dupla</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="app.js" defer></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Portfolio em Dupla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
     <header>
         <p class="projeto">Portfólio Mobile em Dupla</p>
-        
+
         <nav class="barra-nav">
             <ul>
                 <li><a href="#biografia">Sobre nós</a></li>
@@ -21,7 +21,9 @@
             </ul>
         </nav>
     </header>
-    
+
+    <!-- COLABORADORES -->
+
     <div id="colab">
         <div class="dupla">
             <a target="_blank" href="https://github.com/marcelamoraesrp">
@@ -38,10 +40,13 @@
     </div>
     <hr />
     <main>
+
+        <!-- SOBRE NÓS -->
+
         <div class="sobrenos" id="biografia">
-            
+
             <p>Sobre nós</p>
-            
+
             <p>
                 Somos alunos da ETEC e atualmente cursamos Desenvolvimento de Sistemas. Buscamos constantemente adquirir
                 novos conhecimentos, tanto nas aulas quanto por
@@ -52,60 +57,67 @@
                 modelagem de dados.
             </p>
         </div>
-        
+
         <br>
         <div class="tec" id="ferramentas">
             <p class="tectitulo">Tecnologias utilizadas nas aulas</p>
-            
-            
-            <img class="tecimg" src="img/React.png" alt="">
-            <img class="tecimg" src="img/Expo.png" alt="">
-            
+
+
+            <img class="tecimg" src="img/tec/React.png" alt="">
+            <img class="tecimg" src="img/tec/Expo.png" alt="">
+
             <p>
                 React Native é um framework de código aberto criado pela Meta Platforms, Inc. É usado para desenvolver
                 aplicativos para Android, Android TV, iOS, macOS, tvOS, Web, Windows, e UWP.
             </p>
-            
+
             <p>
                 Expo é um framework e plataforma de código aberto para React Native que simplifica a criação, construção
                 e implantação de aplicativos nativos para Android, iOS e web, usando JavaScript ou TypeScript.
             </p>
-            
+
         </div>
-        
-        <div>
+
+        <!-- PROJETOS -->
+
+        <!-- <div class="projbar">
+
             <p class="projtitulo">Projetos de cada um da dupla: </p>
+            <button id="botao"></button>
+
         </div>
 
-        <button id="botao">
-            botao
-        </button>
+        <div class="box">
 
-        <div id="joao" class="Inativo">
-            <img class="joao" src="https://avatars.githubusercontent.com/u/235787009?v=4" alt="">
-            <p>João</p>
-        </div>
-        
-        <div id="marcela" >
-            <img class="marcela" src="https://avatars.githubusercontent.com/u/230621478?v=4" alt="">
-            <p>Marcela</p>
-        </div>
-        
-        
+            <div class="cards">
+                <div id="joaoclass" class="projetos">
+                    <img class="imgcards" src="img/joao/rpg1.png" alt="projeto-rpg1">
+                    <p>Esse foi um projeto na qual os alunos deviam criar cards de rpg, tanto em pé quanto deitado</p>
+                    
+                </div>
+                
+                <div id="marcelaclass" class="projetos Inativo">
+                    <img class="imgcards" src="img/joao/rpg1.png" alt="projeto-rpg1">
+                    <p>Esse foi um projeto na qual os alunos deviam criar cards de rpg, tanto em pé quanto deitado</p>
+                </div>
+                
+            </div>
+
+        </div> -->
+
     </main>
-    
-    
+
+
     <footer>
         <div class="contatos">
             <p>Marcela Moraes Contatos:</p>
             <div class="img_contatos">
                 <a href="https://github.com/marcelamoraesrp"><img class="github"
-                    src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="github Marcela Moraes">
-                </a>
-                
+                        src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="github Marcela Moraes"></a>
+
                 <a href="https://github.com/marcelamoraesrp"><img class="linkedin"
-                    src="https://kidsmealsinc.org/wp-content/uploads/3-2-900x900.png" alt="linkedin Marcela Moraes">
-                </a>
+                        src="https://kidsmealsinc.org/wp-content/uploads/3-2-900x900.png"
+                        alt="linkedin Marcela Moraes"></a>
             </div>
         </div>
         <p id="copy">&copy 2026 Projeto Portfolio em Dupla.</p>
@@ -113,12 +125,10 @@
             <p>João Luiz Moraes Contatos:</p>
             <div class="img_contatos">
                 <a href="https://github.com/JoaoLuiz07"><img class="github"
-                    src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="github João Luiz Moraes">
-                </a>
+                        src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="github João Luiz Moraes"></a>
                 <a href="https://github.com/JoaoLuiz07"><img class="linkedin"
-                    src="https://kidsmealsinc.org/wp-content/uploads/3-2-900x900.png"
-                    alt="linkedin João Luiz Moraes">
-                </a>
+                        src="https://kidsmealsinc.org/wp-content/uploads/3-2-900x900.png"
+                        alt="linkedin João Luiz Moraes"></a>
             </div>
         </div>
     </footer>
