@@ -164,23 +164,32 @@ hr {
 
 /* PROJETOS */
 
-.projbox {
-    margin-left: clamp(5rem, 10vw, 12.4rem);
-    width: 100vw;
-}
+    #botao {
+        width: 100px;
+        background-color: #8525bd;
+        color: rgb(206, 4, 4);
+        margin: 0 auto;
+    }
 
-.projtitulo {
-    font-size: clamp(1.1rem, 2.3vw, 1.4rem);
-    ;
-}
+    .box {
+        display: flex;
+        margin: 0 auto;
 
-.projetos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 50vw;
-    background-color: #8525bd;
-    /* margin: 0 auto; */
-}
+    }
+
+    .react {
+        display: flex;
+        width: 10%;
+    }
+
+    .expo {
+        display: flex;
+        width: 10%;
+    }
+
+    .Inativo {
+        display: none;
+    }
 
 /* FOOTER */
 

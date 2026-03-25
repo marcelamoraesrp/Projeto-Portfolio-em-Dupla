@@ -1,7 +1,10 @@
-const botao = document.getElementById("botao");
+// const botao = document.getElementById('botao');
 
 function vai() {
-    document.body.classList.toggle("Ativo");
+    const joao = document.getElementById('joaoeba');
+    joao.classList.toggle('Inativo');
+    const marcela = document.getElementById('marcela');
+    marcela.classList.toggle('Inativo');
 }
 
-botao.addEventListener("click", vai());
+// botao.addEventListener('click', vai());
