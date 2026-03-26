@@ -6,10 +6,10 @@ let joaocard = 2;
 
 function quem() {
     if (joaoclass.classList.contains('Inativo')) {
-        botao.textContent = "Clique para ver os projetos do João";
+        botao.textContent = "João";
     }
     else {
-        botao.textContent = "Clique para ver os projetos da Marcela";
+        botao.textContent = "Marcela";
     }
 }
 
