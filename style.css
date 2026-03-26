@@ -53,19 +53,18 @@ header {
 #btn-mobile{
     display: none;
 }
-.barra-nav {
+#Menu {
     display: flex;
 }
 
 ul {
     display: flex;
-    gap: 15px;
+    gap: 18px;
     margin: 0;
-    padding: 30px;
+    margin-right: 3em;
 }
 
 li {
-    padding: 0.5vw;
     font-size: clamp(1.15rem, 1.3vw, 1.9rem);
 }
 
@@ -259,6 +258,22 @@ footer {
     header>nav {
         margin-top: -40px;
     }
+    #btn-mobile{
+        display: block;
+    }
+    #Menu {
+        /* display: none; */
+        position: absolute;
+        width: 100%;
+        top: 8em;
+
+    }
+    .barra-nav.active{
+        display: flex;
+    }
+    ul{
+        gap: 0px;
+    }
 }
 
 @media (max-width: 691px) {
@@ -277,15 +292,6 @@ footer {
 
     .tec {
         width: 75vw;
-    }
-
-    ul {
-        padding: 0;
-        gap: 3px;
-    }
-
-    li {
-        padding: 9px;
     }
 
     #colab {
