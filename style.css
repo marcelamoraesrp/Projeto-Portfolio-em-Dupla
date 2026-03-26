@@ -79,7 +79,7 @@ li:hover {
     display: flex;
     gap: 0.1em;
     margin-block-start: -1.5em;
-    margin-inline-start: 2.25em;
+    margin-inline-start: 34.5%;
 }
 
 .dupla {
@@ -278,12 +278,16 @@ footer {
 
     #colab {
         margin-block-start: -0.6em;
+        margin-inline-start: 15%;
     }
 
     .projtitulo {
         margin-left: 2.34em;
     }
 
+    footer{
+        height: 8em;
+    }
 }
 
 @media (max-width: 425px) {
