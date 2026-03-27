@@ -1,6 +1,6 @@
-const botao = document.getElementById('botao');
+//const botao = document.getElementById('botao');
 const btnMobile = document.getElementById('btn-mobile');
-const btnproj = document.querySelectorAll('.btn-proj');
+//const btnproj = document.querySelectorAll('.btn-proj');
 
 const joaoclass = document.getElementById('joaoclass');
 const marcelaclass = document.getElementById('marcelaclass');
