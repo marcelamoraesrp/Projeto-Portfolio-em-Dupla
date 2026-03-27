@@ -12,10 +12,10 @@ function toggleMenu(){
 
 function quem() {
     if (joaoclass.classList.contains('Inativo')) {
-        botao.textContent = "João";
+        botao.textContent = "Mudar para João";
     }
     else {
-        botao.textContent = "Marcela";
+        botao.textContent = "Mudar para Marcela";
     }
 }
 
@@ -27,5 +27,5 @@ function vai() {
     quem()
 }
 
-btnMobile.addEventListener('click', toggleMenu)
+btnMobile.addEventListener('click', toggleMenu);
 botao.addEventListener('click', vai);
