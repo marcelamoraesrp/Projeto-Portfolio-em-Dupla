@@ -21,6 +21,9 @@ let marcelacard = [
     "img/marcela/RPGvert.png"
 ]
 
+joaoimg.src = joaocard[0];
+marcelaimg.src = marcelacard[0];
+
 function projeto() {
     if (contagemcard == 1) {
         joaoimg.src = joaocard[1];
@@ -37,8 +40,6 @@ function projeto() {
         contagemcard = 0
     }
 }
-
-projeto()
 
 function toggleMenu(){
     const nav = document.getElementById('barra-nav');
