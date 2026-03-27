@@ -177,7 +177,6 @@ hr {
 }
 
 #botao {
-    display: block;
     width: 70px;
     height: 70px;
     border-radius: 100%;
@@ -185,6 +184,14 @@ hr {
     cursor: pointer;
 }
 
+.btn-proj {
+    width: 79%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4b2856c7;
+    cursor: pointer;
+    grid-column: 1/2;
+}
 
 .projtitulo {
     font-size: clamp(1.1rem, 2.3vw, 1.4rem);

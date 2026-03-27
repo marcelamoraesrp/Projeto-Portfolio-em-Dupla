@@ -1,9 +1,44 @@
 const botao = document.getElementById('botao');
 const btnMobile = document.getElementById('btn-mobile');
+const btnproj = document.querySelectorAll('.btn-proj');
+
 const joaoclass = document.getElementById('joaoclass');
 const marcelaclass = document.getElementById('marcelaclass');
 
-let joaocard = 2;
+const joaoimg = document.getElementById('joaoimg')
+const marcelaimg = document.getElementById('marcelaimg');
+
+let contagemcard = 0;
+let contagemquem = 0;
+
+let joaocard = [
+    "img/joao/rpg1.png",
+    "img/joao/rpg2.png"
+];
+
+let marcelacard = [
+    "img/marcela/RPGhori.png",
+    "img/marcela/RPGvert.png"
+]
+
+function projeto() {
+    if (contagemcard == 1) {
+        joaoimg.src = joaocard[1];
+        marcelaimg.src = marcelacard[1];
+        contagemcard++;
+    }
+    else {
+        joaoimg.src = joaocard[0];
+        marcelaimg.src = marcelacard[0];
+        contagemcard++;
+    }
+    
+    while (contagemcard >= 2) {
+        contagemcard = 0
+    }
+}
+
+projeto()
 
 function toggleMenu(){
     const nav = document.getElementById('barra-nav');
@@ -11,11 +46,16 @@ function toggleMenu(){
 }
 
 function quem() {
-    if (joaoclass.classList.contains('Inativo')) {
+    if (contagemquem == 0) {
         botao.textContent = "Mudar para João";
+        contagemquem++
     }
     else {
         botao.textContent = "Mudar para Marcela";
+        contagemquem++
+    }
+    while (contagemquem >= 2) {
+        contagemquem = 0
     }
 }
 
@@ -29,3 +69,9 @@ function vai() {
 
 btnMobile.addEventListener('click', toggleMenu);
 botao.addEventListener('click', vai);
+
+btnproj.forEach(
+    function(botao) {
+        botao.addEventListener('click', projeto);
+    }
+);
