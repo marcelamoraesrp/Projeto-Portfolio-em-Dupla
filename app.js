@@ -1,4 +1,4 @@
-//const botao = document.getElementById('botao');
+const botao = document.getElementById('botao');
 const btnMobile = document.getElementById('btn-mobile');
 //const btnproj = document.querySelectorAll('.btn-proj');
 
