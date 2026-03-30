@@ -1,12 +1,11 @@
-const botao = document.getElementById('botao');
 const btnMobile = document.getElementById('btn-mobile');
-//const btnproj = document.querySelectorAll('.btn-proj');
 
 const joaoclass = document.getElementById('joaoclass');
 const marcelaclass = document.getElementById('marcelaclass');
 
-const joaoimg = document.getElementById('joaoimg')
+const joaoimg = document.getElementById('joaoimg');
 const marcelaimg = document.getElementById('marcelaimg');
+
 
 let contagemcard = 0;
 let contagemquem = 0;
@@ -16,34 +15,42 @@ let joaocard = [
     "img/joao/rpg2.png"
 ];
 
+
+
 let marcelacard = [
-    "img/marcela/RPGhori.png",
-    "img/marcela/RPGvert.png"
-]
+    "img/marcela/RPGvert.png",
+    "img/marcela/RPGhori.png"
+
+];
 
 joaoimg.src = joaocard[0];
 marcelaimg.src = marcelacard[0];
 
 function projeto() {
     if (contagemcard == 1) {
-        joaoimg.src = joaocard[1];
-        marcelaimg.src = marcelacard[1];
-        contagemcard++;
-    }
-    else {
         joaoimg.src = joaocard[0];
         marcelaimg.src = marcelacard[0];
         contagemcard++;
     }
-    
+    else {
+        joaoimg.src = joaocard[1];
+        marcelaimg.src = marcelacard[1];
+        contagemcard++;
+    }
+
     while (contagemcard >= 2) {
         contagemcard = 0
     }
+
+    console.log("contagem card " + contagemcard);
+
 }
 
-function toggleMenu(){
+
+function toggleMenu() {
     const nav = document.getElementById('barra-nav');
     nav.classList.toggle('active');
+
 }
 
 function quem() {
@@ -58,6 +65,8 @@ function quem() {
     while (contagemquem >= 2) {
         contagemquem = 0
     }
+    console.log("contagem quem " + contagemquem)
+    console.log("contagem card " + contagemcard);
 }
 
 quem()
@@ -69,10 +78,3 @@ function vai() {
 }
 
 btnMobile.addEventListener('click', toggleMenu);
-botao.addEventListener('click', vai);
-
-btnproj.forEach(
-    function(botao) {
-        botao.addEventListener('click', projeto);
-    }
-);

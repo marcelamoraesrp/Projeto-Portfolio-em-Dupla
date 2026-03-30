@@ -50,9 +50,11 @@ header {
 .projeto {
     font-size: clamp(1.7rem, 2.5vw, 2rem);
 }
-#btn-mobile{
+
+#btn-mobile {
     display: none;
 }
+
 #Menu {
     display: flex;
 }
@@ -185,13 +187,15 @@ hr {
 }
 
 .btn-proj {
-    width: 79%;
-    height: 100%;
+    width: clamp(220px, 83%, 300px);
+    height: 140%;
+    max-height: 23px;
     border-radius: 10px;
     background-color: #4b2856c7;
     cursor: pointer;
     grid-column: 1/2;
 }
+
 
 .projtitulo {
     font-size: clamp(1.1rem, 2.3vw, 1.4rem);
@@ -211,7 +215,7 @@ hr {
 .projetos {
     background-color: #151118;
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: clamp(220px, 83%, 300px) 1fr;
     text-align: center;
     overflow: hidden;
 
@@ -220,15 +224,18 @@ hr {
 
     border: 3px solid var(--cor_principal);
     border-radius: 50px;
-    
+
     padding: 25px;
-    gap: 0;
+    gap: 20px;
 }
 
+.projetos p {
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
 
 .imgcards {
     width: clamp(220px, 83%, 300px);
-    margin-bottom: 10px;
 }
 
 .Inativo {
@@ -286,17 +293,23 @@ footer {
     } */
 
 
-    .barra-nav.active{
+    .barra-nav.active {
         display: flex;
     }
 
-    ul{
+    ul {
         display: block;
     }
+
     .projetos {
         width: 70vw;
         border-radius: 30px;
     }
+
+    .imgcards {
+        margin-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 727px) {
@@ -331,10 +344,16 @@ footer {
         gap: 1;
         width: 82%;
     }
-    
-    footer{
+
+    footer {
         height: 9em;
     }
+
+    .projetos p {
+        grid-row: 2/3;
+        grid-column:   auto;
+    }
+
 
 }
 
@@ -375,8 +394,5 @@ footer {
     #copy {
         font-size: 14px;
     }
-    /* .imgcards { 
-        width: 100%;
-        height: 490px;
-    } */
+
 }
