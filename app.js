@@ -55,11 +55,11 @@ function toggleMenu() {
 
 function quem() {
     if (contagemquem == 0) {
-        botao.textContent = "Mudar para João";
+        botao.textContent = "Mudar para Marcela";
         contagemquem++
     }
     else {
-        botao.textContent = "Mudar para Marcela";
+        botao.textContent = "Mudar para João";
         contagemquem++
     }
     while (contagemquem >= 2) {
