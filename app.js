@@ -1,56 +1,159 @@
 const btnMobile = document.getElementById('btn-mobile');
 
-const joaoclass = document.getElementById('joaoclass');
-const marcelaclass = document.getElementById('marcelaclass');
+const joaoclass = document.querySelectorAll('.joaoclass');
+const marcelaclass = document.querySelectorAll('.marcelaclass');
 
-const joaoimg = document.getElementById('joaoimg');
-const marcelaimg = document.getElementById('marcelaimg');
+const joaoImgRpg = document.getElementById('joaoImgRpg');
+const marcelaImgRpg = document.getElementById('marcelaImgRpg');
 
+const joaoImgFilmes = document.getElementById('joaoImgFilmes');
+const marcelaImgFilmes = document.getElementById('marcelaImgFilmes');
 
-let contagemcard = 0;
+const joaoImgSoftHard = document.getElementById('joaoImgSoftHard');
+const marcelaImgSoftHard = document.getElementById('marcelaImgSoftHard');
+
+let contagemcardRpg = 0;
+let contagemcardFilmes = 0;
+let contagemcardCalc = 0;
+
 let contagemquem = 0;
 
-let joaocard = [
+// Projetos do João
+
+let joaoCardRpg = [
     "img/joao/rpg1.png",
     "img/joao/rpg2.png"
 ];
 
-
-
-let marcelacard = [
-    "img/marcela/RPGvert.png",
-    "img/marcela/RPGhori.png"
-
+let joaoCardFilmes = [
+    "img/joao/filmes1.png",
+    "img/joao/filmes2.png",
+    "img/joao/filmes3.png"
 ];
 
-joaoimg.src = joaocard[0];
-marcelaimg.src = marcelacard[0];
+let joaoCardCalc = [
+    "img/joao/calculadora1.png",
+    "img/joao/calculadora2.png",
+    "img/joao/calculadora3.png"
+];
 
-function projeto() {
-    if (contagemcard == 1) {
-        joaoimg.src = joaocard[0];
-        marcelaimg.src = marcelacard[0];
-        contagemcard++;
+let joaoCardSoftHard = [
+    "img/joao/softhard.png"
+];
+
+// Projetos da Marcela
+
+let marcelaCardRpg = [
+    "img/marcela/RPGvert.png",
+    "img/marcela/RPGhori.png"
+];
+
+let marcelaCardFilmes = [
+    "img/marcela/filmes1.png",
+    "img/marcela/filmes2.png",
+    "img/marcela/filmes3.png"
+];
+
+let marcelaCardCalc = [
+    "img/marcela/calculadora1.png",
+    "img/marcela/calculadora2.png",
+    "img/marcela/calculadora3.png"
+];
+
+let marcelaCardSoftHard = [
+    "img/marcela/SoftHard.png"
+];
+
+joaoImgRpg.src = joaoCardRpg[0];
+marcelaImgRpg.src = marcelaCardRpg[0];
+
+marcelaImgFilmes.src = marcelaCardFilmes[0];
+joaoImgFilmes.src = joaoCardFilmes[0];
+
+
+joaoImgCalc.src = joaoCardCalc[0];
+marcelaImgCalc.src = marcelaCardCalc[0];
+
+joaoImgSoftHard.src = joaoCardSoftHard[0];
+marcelaImgSoftHard.src = marcelaCardSoftHard[0];
+
+// RPG
+
+function projetoRpg() {
+    if (contagemcardRpg == 0) {
+        joaoImgRpg.src = joaoCardRpg[0];
+        marcelaImgRpg.src = marcelaCardRpg[0];
+        contagemcardRpg++;
     }
     else {
-        joaoimg.src = joaocard[1];
-        marcelaimg.src = marcelacard[1];
-        contagemcard++;
+        joaoImgRpg.src = joaoCardRpg[1];
+        marcelaImgRpg.src = marcelaCardRpg[1];
+        contagemcardRpg++;
     }
-
-    while (contagemcard >= 2) {
-        contagemcard = 0
+    
+    while (contagemcardRpg >= 2) {
+        contagemcardRpg = 0
     }
-
-    console.log("contagem card " + contagemcard);
-
 }
+
+projetoRpg()
+
+// FILMES
+
+function projetoFilmes() {
+    if (contagemcardFilmes == 0) {
+        joaoImgFilmes.src = joaoCardFilmes[0];
+        marcelaImgFilmes.src = marcelaCardFilmes[0];
+        contagemcardFilmes++;
+    }
+    else if (contagemcardFilmes == 1) {
+        joaoImgFilmes.src = joaoCardFilmes[1];
+        marcelaImgFilmes.src = marcelaCardFilmes[1];
+        contagemcardFilmes++;
+    }
+    else {
+        joaoImgFilmes.src = joaoCardFilmes[2];
+        marcelaImgFilmes.src = marcelaCardFilmes[2];
+        contagemcardFilmes++;
+    }
+
+    while (contagemcardFilmes >= 3) {
+        contagemcardFilmes = 0
+    }
+}
+
+projetoFilmes()
+
+// CALCULADORA
+
+function projetoCalc() {
+    if (contagemcardCalc == 0) {
+        joaoImgCalc.src = joaoCardCalc[0];
+        marcelaImgCalc.src = marcelaCardCalc[0];
+        contagemcardCalc++;
+    }
+    else if (contagemcardCalc == 1) {
+        joaoImgCalc.src = joaoCardCalc[1];
+        marcelaImgCalc.src = marcelaCardCalc[1];
+        contagemcardCalc++;
+    }
+    else {
+        joaoImgCalc.src = joaoCardCalc[2];
+        marcelaImgCalc.src = marcelaCardCalc[2];
+        contagemcardCalc++;
+    }
+
+    while (contagemcardCalc >= 3) {
+        contagemcardCalc = 0
+    }
+}
+
+projetoCalc()
 
 
 function toggleMenu() {
     const nav = document.getElementById('barra-nav');
     nav.classList.toggle('active');
-
 }
 
 function quem() {
@@ -65,16 +168,20 @@ function quem() {
     while (contagemquem >= 2) {
         contagemquem = 0
     }
-    console.log("contagem quem " + contagemquem)
-    console.log("contagem card " + contagemcard);
 }
 
 quem()
 
 function vai() {
-    joaoclass.classList.toggle('Inativo');
-    marcelaclass.classList.toggle('Inativo');
-    quem()
+    joaoclass.forEach(item => {
+        item.classList.toggle('Inativo');
+    })
+
+    marcelaclass.forEach(item => {
+        item.classList.toggle('Inativo');
+    })
+
+    quem() 
 }
 
 btnMobile.addEventListener('click', toggleMenu);
