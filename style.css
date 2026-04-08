@@ -170,12 +170,11 @@ hr {
 
 .projbar {
     display: flex;
-    margin-left: clamp(5rem, 12.5vw, 12.4rem);
     margin-bottom: 14px;
     gap: 1px;
     justify-content: space-around;
     align-items: center;
-    max-width: 1180px;
+    min-width: 100%;
 }
 
 #botao {
@@ -285,7 +284,6 @@ footer {
     header>nav {
         margin-top: -40px;
     }
-
 
     /* #btn-mobile{
         display: block;
