@@ -196,6 +196,11 @@ hr {
     grid-column: 1/2;
 }
 
+.acessar_proj{
+    grid-column: 2/2;
+    grid-row: 2;
+    cursor: pointer;
+}
 
 .projtitulo {
     font-size: clamp(1.1rem, 2.3vw, 1.4rem);
@@ -348,6 +353,11 @@ footer {
 
     footer {
         height: 9em;
+    }
+
+    .acessar_proj{
+        grid-column: auto;
+        grid-row: auto;
     }
 
     .projetos p {
