@@ -12,9 +12,17 @@ const marcelaImgFilmes = document.getElementById('marcelaImgFilmes');
 const joaoImgSoftHard = document.getElementById('joaoImgSoftHard');
 const marcelaImgSoftHard = document.getElementById('marcelaImgSoftHard');
 
+const joaoImgCopa = document.getElementById('joaoImgCopa');
+const marcelaImgCopa = document.getElementById('marcelaImgCopa');
+
+const joaoImgNav = document.getElementById('joaoImgNav');
+const marcelaImgNav = document.getElementById('marcelaImgNav');
+
 let contagemcardRpg = 0;
 let contagemcardFilmes = 0;
 let contagemcardCalc = 0;
+let contagemcardCopa = 0;
+let contagemcardNav = 0;
 
 let contagemquem = 0;
 
@@ -41,6 +49,17 @@ let joaoCardSoftHard = [
     "img/joao/softhard.png"
 ];
 
+let joaoCardCopa = [
+    "img/joao/copa1.png",
+    "img/joao/copa2.png"
+];
+
+let joaoCardNav = [
+    "img/joao/LoljaHome.png",
+    "img/joao/LoljaMoletons.png",
+    "img/joao/LoljaRegatas.png"
+];
+
 // Projetos da Marcela
 
 let marcelaCardRpg = [
@@ -64,6 +83,17 @@ let marcelaCardSoftHard = [
     "img/marcela/SoftHard.png"
 ];
 
+let marcelaCardNav = [
+    "img/marcela/Navegacao1Marcela.png",
+    "img/marcela/Navegacao2Marcela.png",
+    "img/marcela/Navegacao3Marcela.png",
+];
+
+let marcelaCardCopa = [
+    "img/marcela/copa1.png",
+    "img/marcela/copa2.png"
+];
+
 joaoImgRpg.src = joaoCardRpg[0];
 marcelaImgRpg.src = marcelaCardRpg[0];
 
@@ -76,6 +106,15 @@ marcelaImgCalc.src = marcelaCardCalc[0];
 
 joaoImgSoftHard.src = joaoCardSoftHard[0];
 marcelaImgSoftHard.src = marcelaCardSoftHard[0];
+
+joaoImgCopa.src = joaoCardCopa[0];
+marcelaImgCopa.src = marcelaCardCopa[0];
+
+joaoImgNav.src = joaoCardNav[0];
+marcelaImgNav.src = marcelaCardNav[0];
+
+joaoImgImgPicker.src = joaoCardImgPicker[0];
+marcelaImgImgPicker.src = marcelaCardImgPicker[0];
 
 // RPG
 
@@ -90,7 +129,7 @@ function projetoRpg() {
         marcelaImgRpg.src = marcelaCardRpg[1];
         contagemcardRpg++;
     }
-    
+
     while (contagemcardRpg >= 2) {
         contagemcardRpg = 0
     }
@@ -150,6 +189,51 @@ function projetoCalc() {
 
 projetoCalc()
 
+// COPA
+
+function projetoCopa() {
+    if (contagemcardCopa == 1) {
+        joaoImgCopa.src = joaoCardCopa[0];
+        marcelaImgCopa.src = marcelaCardCopa[0];
+        contagemcardCopa++;
+    }
+
+    else {
+        joaoImgCopa.src = joaoCardCopa[1];
+        marcelaImgCopa.src = marcelaCardCopa[1];
+        contagemcardCopa++;
+    }
+
+    while (contagemcardCopa >= 2) {
+        contagemcardCopa = 0
+    }
+}
+
+// NAVEGAÇÃO
+
+function projetoNav() {
+    contagemcardNav++;
+    if (contagemcardNav == 1) {
+        joaoImgNav.src = joaoCardNav[1];
+        marcelaImgNav.src = marcelaCardNav[1];
+    }
+    
+    else if ( contagemcardNav == 2) {
+        joaoImgNav.src = joaoCardNav[2];
+        marcelaImgNav.src = marcelaCardNav[2];   
+    }
+    
+    else {
+        joaoImgNav.src = joaoCardNav[0];
+        marcelaImgNav.src = marcelaCardNav[0];
+    }
+    
+    while (contagemcardNav == marcelaCardNav.length) {
+        contagemcardNav = 0;
+        console.log(contagemcardNav);
+    }
+    console.log(contagemcardNav);
+}
 
 function toggleMenu() {
     const nav = document.getElementById('barra-nav');
@@ -181,7 +265,7 @@ function vai() {
         item.classList.toggle('Inativo');
     })
 
-    quem() 
+    quem()
 }
 
 btnMobile.addEventListener('click', toggleMenu);
