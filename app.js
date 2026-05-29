@@ -113,9 +113,6 @@ marcelaImgCopa.src = marcelaCardCopa[0];
 joaoImgNav.src = joaoCardNav[0];
 marcelaImgNav.src = marcelaCardNav[0];
 
-joaoImgImgPicker.src = joaoCardImgPicker[0];
-marcelaImgImgPicker.src = marcelaCardImgPicker[0];
-
 // RPG
 
 function projetoRpg() {
